@@ -1,0 +1,118 @@
+.container {
+  width:100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  display:grid;
+  grid-template-columns: 1fr auto 300px;
+}
+
+#sign{
+  font-size: 22px;
+  font-weight:500;
+  margin:240px 0 366px 300px;
+  padding:8px 10px;
+  border-radius: 15px;
+  
+}
+.logo{
+  width:90px;
+  height:90px;
+  margin:-400px 90px 0 250px;
+}
+#sign a{
+  color:white;
+  text-decoration:none;
+  
+}
+
+#contain{
+  background-image:url("https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/en/twitter-tips/desktop-assets/ch-01/ch12findphone.png.twimg.1920.png");
+  color:white;
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position-x: 150px;
+}
+.tweet{
+  padding:5px 4px 0px 15px;
+}
+#arrow{
+  padding:0px 2px;
+  padding-right:0;
+  border-radius:55px;
+}
+#arrow:hover{
+  background-color: lightgray;
+  
+}
+
+
+@media screen and (max-width: 1100px) and (min-width:760px) {
+  .container {
+    width:100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    display:grid;
+    grid-template-columns: 200px auto 240px;
+  }
+
+}
+
+
+@media screen and (max-width: 760px) {
+  .container {
+    width:100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    display:grid;
+    grid-template-columns: 1fr auto ;
+  }
+  
+  .Widget{
+    display: none;
+  }
+  #sign{
+    font-size: 13px;
+    font-weight:500;
+    margin:350px 0px 50px 20px;
+    padding:8px 10px;
+    border-radius: 15px;
+    color:white;
+    
+  }
+  
+  .logo{
+    width:50px;
+    height:50px;
+    margin:50px 20px 0 0px;
+  }
+  
+  #contain{
+    padding:50px;
+    width: 100%;
+    background-image:url("https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/en/twitter-tips/desktop-assets/ch-01/ch12findphone.png.twimg.1920.png");
+    color:white;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: center;
+    background-position-y: center;
+    text-align: center;
+  }
+  .tweet{
+    padding:4px 4px 0px 4px;
+    margin-bottom:-8px;
+    font-size: 13.5px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card,
+  .footer {
+    border-color: #222;
+  }
+  .code {
+    background: #111;
+  }
+  .logo img {
+    filter: invert(1);
+  }
+}

@@ -1,0 +1,134 @@
+.profile{
+    margin-top:-10px;
+    position: relative;
+}
+#imge{
+    width:36px;
+    height:40px;
+    border-radius:30px;
+    margin-right:2px;
+    z-index: 5;
+}
+.username{
+    font-size:18px;
+    font-weight: 600;
+    padding-left:2px;
+    margin-top:-10px;
+    
+}
+.emaill{
+    font-size:15px;
+}
+.postText{
+    font-size:18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:0px;
+    margin-left:50px;
+    margin-top:-5px;
+    color:gray;
+}
+.postImg{
+    width:99.5%;
+    height:140px;
+    margin-left:0;
+    padding-left:0;
+    margin-right:0;
+    padding-right:0;
+}
+.row span{
+    font-size: 20px;
+    margin-left:99px;
+    
+}
+
+.row{
+    padding:0;
+    margin-bottom:-8px;
+    width:100%;
+   
+}
+#comments:hover{
+    color:red;
+}
+.heart{
+    margin-top:-4px;
+    width:25px;
+    color:red;
+}
+.row .likes{
+    padding:0;
+    margin:0;
+    font-size:16px;
+    margin-left:2px;
+    margin-top:-5px;
+}
+@media screen and (max-width:760px){
+    .profile{
+        margin-top:-12px;
+        position: relative;
+    }
+    .username{
+        font-size:10.5px;
+        font-weight: 600;
+        padding-left:2px;
+        left:-2px;
+        top:-2px;
+        position: relative;
+        
+    }
+    .emaill{
+        font-size:7.2px;
+        left:12px;
+        margin-top:17px;
+        position: absolute;
+    }
+    .time{
+        font-size:6.2px;
+    }
+    
+    .row span{
+        font-size: 11px;
+        margin-left:15px;
+        
+        
+    }
+    .row:first-child{
+        margin-left:12px;
+    }
+    .row{
+        padding:0;
+        margin-bottom:-8px;
+        width:100%;
+        margin-top:-15px;
+    }
+    .profile{
+        margin-top:-15px;
+    }
+    #imge{
+        width:22px;
+        height:22px;
+        margin-left:-10px;
+    }
+    .postText{
+        font-size:10px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding:0px;
+        margin-left:18px;
+        margin-top:7px;
+        
+        
+    }
+    .heart{
+        
+        width:15px;
+        margin-left:-5px;
+        margin-top:-2px;
+    }
+    .row .likes{
+        padding:0;
+        margin:0;
+        font-size:10px;
+        margin-left:1px;
+        
+    }
+}

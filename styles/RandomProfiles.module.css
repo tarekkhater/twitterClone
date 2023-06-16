@@ -1,0 +1,121 @@
+.container{
+    width:100%;
+    max-width:100%;
+    padding:0px;
+    padding-top:10px;
+}
+.Div{
+    background-color:rgb(241, 241, 241);
+    border-radius: 20px;
+    padding:10px 0 60px 0 ;
+}
+
+.profile{
+    padding-bottom:35px;
+    border-radius: 10px;
+    display:block;
+    align-items: center;
+}
+.user{
+    width:100%;
+    display:flex;
+    align-items: center;
+    margin-top:10px;
+    width:100%;
+    padding:5px;
+    border-radius:15px;
+
+}
+
+.imgProfile{
+    height:30px;
+    width: 32px;
+    border-radius:20px;
+}
+.followBtn{
+    padding:5px 12px;
+    background-color: #0d6efd;
+    color:white;
+    width:70px;
+    float:right;
+    font-size: 14px;
+    margin-right:16px;
+    margin-top: -5px;
+    border:none;
+    border-radius: 15px;
+}
+.text h4{
+    margin-top: 8px;
+    font-size:17px;
+}
+.text h6{
+    margin-top:-8px;
+    font-size:14px;
+}
+.text{
+    margin-left:-3px;
+}
+.Div h3{
+    margin:8px 2px 2px 16px;
+    font-size:20px;
+}
+.show{
+    color:rgb(48, 140, 197);
+    float:right;
+    margin-right:16px;
+    text-decoration: none;
+    font-family: 'Bold';
+    font-size:18px;
+    border:none;
+    padding:0 ;
+    margin-top:10px;
+}
+.profile:hover{
+    background-color: rgb(228, 225, 225);
+}
+@media screen and (max-width:760px) {
+    
+    
+    .imgProfile{
+        height:22px;
+        width: 25px;
+        
+    }
+    .followBtn{
+        padding:3px 5px;
+        font-size:8px;
+        border-radius: 12px;
+        width:38px;
+        
+    }
+    .text h4{
+        font-size:7.5px;
+        font-weight:500;
+    }
+    .text h6{
+        margin-top:-8px;
+        font-size:8px;
+    }
+    .text{
+        margin-left:-4px;
+        margin-top:2px;
+    }
+    .Div h3{
+        margin:8px 2px 2px 5px;
+        font-size:11px;
+    }
+    .show{
+        font-size:10.5px;
+    }
+
+    .Div{
+        background-color:rgb(241, 241, 241);
+        border-radius: 12px;
+        padding:10px 0 38px 0 ;
+    }
+    
+    .profile{
+        padding-bottom:19px;
+        border-radius: 10px;
+    }
+}
