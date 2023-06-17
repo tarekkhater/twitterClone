@@ -12,11 +12,7 @@ import { useEffect } from 'react';
 export default function Index({feeds , News , users }) {
   const {data:session} = useSession();
   const router = useRouter();
-  useEffect(() => {
-    if(!session){
-      router.push('/signin')
-    }
-  }, []);
+  console.log('user' , session)
 
   if(session){
  
