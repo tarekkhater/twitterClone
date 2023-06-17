@@ -8,7 +8,6 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 function Sidebar() {
   const {data : session} = useSession();
-  console.log(session)
   
   useEffect(()=>{
     import("bootstrap/dist/js/bootstrap");
@@ -19,7 +18,7 @@ function Sidebar() {
   
   return (
     <div className={styles.container}>
-      (<div><img className={styles.logo} src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png?20220821125553' alt='logo'  />
+      <div><img className={styles.logo} src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png?20220821125553' alt='logo'  />
       <div className="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           <p className="nav-link  " id={styles.home}      ><i className="bi bi-house-door-fill"></i><span>&nbsp; Home</span></p>
           <p className="nav-link" id="v-pills-profile-tab"><i className="bi bi-hash"></i><span>&nbsp; Explore</span></p>
@@ -35,7 +34,7 @@ function Sidebar() {
         <h4 className={styles.username}>{session?.user?.name}</h4>
         <h6 className={styles.emaill}>{session?.user?.email}</h6>
         
-    </div></div>)
+    </div></div>
     </div>
   )
 }
