@@ -7,7 +7,7 @@ function signin({providers}) {
   
   return (
     <div className={styles.container} >
-      <img className={styles.logo} src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png' alt='logo'  />
+      <img className={styles.logo} src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png?20220821125553'  alt='logo'  />
      {Object.values(providers).map((provider)=> (
       <div key={provider.id}>
         <button id={styles.sign} className=" bg-red-400" onClick={()=> signIn(provider.id , {callbackUrl:'/'})}>Sign in with {provider.name}</button>
