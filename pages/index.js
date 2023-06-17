@@ -7,13 +7,24 @@ import Link from 'next/link';
 import Comment from '../component/Comment';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Index({feeds , News , users }) {
   const {data:session} = useSession();
+  const [x , setX] = useState(1)
   const router = useRouter();
-  console.log('user' , session)
+  useEffect(() => {
+    setTimeout(() => {
+      setX(x+1)
+    }, 2000);
+    
+  }, []);
 
+  useEffect(() => {
+    if(x > 1 && !session)
+    router.push('/signin')
+  }, [x]);
+  console.log(session)
   if(session){
  
   return (
