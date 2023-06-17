@@ -24,7 +24,6 @@ export default function Index({feeds , News , users }) {
     if(x > 1 && !session)
     router.push('/signin')
   }, [x]);
-  console.log(session)
   if(session){
  
   return (
