@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import {  useState } from 'react';
 import styles from '../styles/Sidebar.module.css'
-import 'bootstrap-icons/font/bootstrap-icons.css';
 import { useSelector } from 'react-redux';
 import {useSession , signOut} from 'next-auth/react'
 import { useEffect } from 'react';
@@ -9,9 +8,7 @@ import { useRouter } from 'next/router';
 function Sidebar() {
   const {data : session} = useSession();
   
-  useEffect(()=>{
-    import("bootstrap/dist/js/bootstrap");
-},[])
+  
     const {profileImg , username , email } = useSelector(state => state.info)
     const router = useRouter();
     const [profile , setProfile] = useState();

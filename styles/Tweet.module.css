@@ -56,8 +56,9 @@
     display:none ;
 }
 .selectImage{
-    
+    position: relative;
     margin:2px 2px 5px 30px;
+    padding:10px 20px;
 }
 .selectImage img{
     width:80%;
@@ -65,7 +66,7 @@
 }
 #remove{
     position: absolute;
-    left:530px;
+    left:0px;
     font-family: 'Bold';
     font-size: large;
     
@@ -100,7 +101,7 @@
     margin-right:16px;
     border-radius: 14px;
     padding:1px 6px;
-    margin-top:2px;
+    margin-top:0px;
     font-size:12px;
 }
 #emoji{
@@ -114,10 +115,7 @@
     
 }
 #remove{
-    position: absolute;
-    left:143px;
-    font-size: 12px;
-    margin-top:-5px;
+    font-size: 14px;
     
 }
 }

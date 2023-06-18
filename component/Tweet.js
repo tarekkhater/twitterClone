@@ -68,7 +68,7 @@ return (
                <div className={styles.emoji}>  
                     <input type="file" id={styles.file} ref={filePickerRef} onChange={addImagePost} />
                &nbsp;<i id={styles.emoji} className="bi bi-images" onClick={()=>filePickerRef.current.click()}></i>
-               <button type="button"id={styles.btn} className="btn btn-primary" disabled={!input.trim()} onClick={setPosts}>Tweet</button>
+               <button type="button"id={styles.btn} className="btn btn-primary" disabled={!input.trim() && !selectImagePost} onClick={setPosts}>Tweet</button>
                </div>
           </div>
      </div>

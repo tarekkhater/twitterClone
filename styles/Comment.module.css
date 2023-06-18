@@ -177,3 +177,66 @@
        
     }
 }
+
+@media screen and (max-width:360px) {
+    .container{
+        width:100%;
+        border:none;
+        opacity:1;
+        position: relative;
+    }
+    .model{
+        max-width: 98%;
+        top:150px;
+        left:5px;
+        padding:22px 15px;
+
+    }
+   
+    .profile{
+        margin-top:0px;
+        position: relative;
+    }
+    #imge{
+        width:36px;
+        height:40px;
+        border-radius:30px;
+        margin-right:2px;
+        z-index: 5;
+    }
+    .username{
+        font-size:13px;
+        font-weight: 600;
+        padding-left:2px;
+        margin-top:-10px;
+        
+    }
+    .emaill{
+        font-size:10px;
+    }
+    #tweet{
+        padding-top:7px;  
+        width:100%;
+        max-width:100%;
+    }
+     
+    #imge1{
+        width:35px;
+        height:40px;
+        border-radius:30px;
+        z-index: 2;
+    }
+    #file{
+        display:none ;
+    }
+    .post{
+        height:60px;
+        margin-top:5px;
+        margin-left:10px;
+        font-size:13px;
+    }
+    .postText{
+        font-size:14px;
+       
+    }
+}

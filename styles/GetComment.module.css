@@ -1,6 +1,13 @@
+.container{
+    width:100%;
+    max-width: 100%;
+    border-bottom: 1px solid lightgray;
+    padding:4px 0;
+}
 .profile{
-    margin-top:-10px;
-    position: relative;
+    margin-top:4px;
+    display: grid;
+    grid-template-columns: auto 1fr;
 }
 #imge{
     width:36px;
@@ -9,11 +16,15 @@
     margin-right:2px;
     z-index: 5;
 }
+
+.info{
+    margin-top: 6px;
+    line-height: 0.3;
+}
 .username{
-    font-size:18px;
+    font-size:17px;
     font-weight: 600;
     padding-left:2px;
-    margin-top:-10px;
     
 }
 .emaill{
@@ -23,8 +34,8 @@
     font-size:18px;
     font-family: Arial, Helvetica, sans-serif;
     padding:0px;
-    margin-left:50px;
-    margin-top:-5px;
+    margin-left:10px;
+    margin-top:5px;
     color:gray;
 }
 .postImg{
@@ -37,14 +48,16 @@
 }
 .row span{
     font-size: 20px;
-    margin-left:99px;
-    
 }
 
 .row{
-    padding:0;
-    margin-bottom:-8px;
+    padding:0 5px;
     width:100%;
+    max-width:100%;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    justify-content: space-between;
+
    
 }
 #comments:hover{
@@ -63,72 +76,24 @@
     margin-top:-5px;
 }
 @media screen and (max-width:760px){
-    .profile{
-        margin-top:-12px;
-        position: relative;
-    }
     .username{
-        font-size:10.5px;
-        font-weight: 600;
-        padding-left:2px;
-        left:-2px;
-        top:-2px;
-        position: relative;
+        font-size:14px;
+        font-weight: 700;
+    }
+    .info{
+        display:block;
+        line-height:2px;
+        margin-top: 8px;
+        margin-left:2px;
         
     }
     .emaill{
-        font-size:7.2px;
-        left:12px;
-        margin-top:17px;
-        position: absolute;
-    }
-    .time{
-        font-size:6.2px;
+        font-size:12px;
     }
     
-    .row span{
-        font-size: 11px;
-        margin-left:15px;
-        
-        
-    }
-    .row:first-child{
-        margin-left:12px;
-    }
-    .row{
-        padding:0;
-        margin-bottom:-8px;
-        width:100%;
-        margin-top:-15px;
-    }
-    .profile{
-        margin-top:-15px;
-    }
     #imge{
-        width:22px;
-        height:22px;
-        margin-left:-10px;
-    }
-    .postText{
-        font-size:10px;
-        font-family: Arial, Helvetica, sans-serif;
-        padding:0px;
-        margin-left:18px;
-        margin-top:7px;
-        
-        
-    }
-    .heart{
-        
-        width:15px;
-        margin-left:-5px;
-        margin-top:-2px;
-    }
-    .row .likes{
-        padding:0;
-        margin:0;
-        font-size:10px;
-        margin-left:1px;
-        
+        width:40px;
+        height:40px;
+        border-radius:30px;
     }
 }

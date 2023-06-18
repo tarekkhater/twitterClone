@@ -39,41 +39,58 @@ export default function GetComments({comment ,id , originalId}) {
         }}
         
   return (
-    <div className='container'>
-        <div className='row'>
-            <div style={{paddingTop:"5px"}}>
+    <div className={styles.container}>
+        <div>
+            <div>
                 <div className={styles.profile}>
+                    <div>
+                      <img src={comment?.profileImg} id={styles.imge} alt='' />
+                    </div>
+                    <div className={styles.right}>
+                      <div className={styles.info}>
+                        <p className={styles.username}>{comment?.username}</p>
+                        <p>
+                          <span className={styles.emaill}> @{comment?.email.split("@gmail.com")} - <span><Moment className={styles.time} fromNow>{comment?.time?.toDate()}</Moment></span> </span>
+                        </p>
+                      </div>
+                      <div className={styles.postText} ><p>{comment?.comment}</p></div>
+                      {comment?.image &&(
+                        <img src={feed.data().image} alt='' className={styles.postImg} />
+                      )}
+                        <div className={styles.row}>
+                          <div>
+                                <span id={styles.comments}><i  className="bi bi-chat-dots" onClick={()=> {setShow(!show);
+                                setPostId(originalId);}
+                                }></i></span>
+                                {comments.length > 0 &&
+                                <span className={styles.comment}>{comments.length}</span>
+                                }
+                                </div>
+                                <div>
+                                {session?.user.name === comment.name ? (
+                                    <span id={styles.comments} ><i  className="bi bi-trash3" onClick={deleteComment}></i></span>
+                                )
+                                :(
+                                    <span id={styles.comments} ><i  className="bi bi-trash3"  disabled={!''}> </i></span>
+                                )}
+                            </div>
+                        
+                            <div>
+                              {hasLiked? 
+                              ( <span id={styles.comments}> <HeartIcon   onClick={likePost} className={styles.heart}></HeartIcon></span>)
+                              :( <span id={styles.comments}> <i  className="bi bi-heart" onClick={likePost}></i></span>)}
+                              {likes.length > 0 &&
+                                <span className={styles.likes}>{likes.length}</span>
+                              }
+                            </div>
+                            <span id={styles.comments}><i  className="bi bi-share"></i></span>               
+                    </div>
+                    </div>
+                    </div >
                     
-                    <span className={styles.postProfile}><img src={comment?.profileImg} id={styles.imge} alt='' /></span>
-                    <span className={styles.username}>{comment?.username}</span>
-                    <span className={styles.emaill}> @{comment?.email.split("@gmail.com")} - <span><Moment className={styles.time} fromNow>{comment?.time?.toDate()}</Moment></span> </span>
-                </div >
-                    <div className={styles.postText} ><p>{comment?.comment}</p></div>
             </div>
         </div >          
-              {comment?.image &&(
-                <img src={feed.data().image} alt='' className={styles.postImg} />
-              )}
-           <div className="row">
-                <div className={styles.row}>
-                    <span id={styles.comments}><i  className="bi bi-chat-dots" onClick={()=> {setShow(!show);setPostId(originalId)}}></i></span>
-                    {session?.user.name === comment?.username ? (
-                    <span id={styles.comments} ><i  className="bi bi-trash3" onClick={deleteComment}></i></span>
-                )
-                 :(
-                    <span id={styles.comments} ><i  className="bi bi-trash3"  disabled={!''}> </i></span>
-                 )}
-               {hasLiked? 
-               ( <span id={styles.comments}> <HeartIcon   onClick={likePost} className={styles.heart}></HeartIcon></span>)
-               :( <span id={styles.comments}> <i  className="bi bi-heart" onClick={likePost}></i></span>)}
-               {likes.length > 0 &&
-                <span className={styles.likes}>{likes.length}</span>
-               }
-               <span id={styles.comments}><i  className="bi bi-share"></i></span>               
-            </div>
-            </div>
-            <hr />
-            
+              
             
         </div>
    
